@@ -1,0 +1,34 @@
+# Dependencies
+markdown:         redcarpet
+highlighter:      pygments
+
+# Permalinks
+#
+# Use of `relative_permalinks` ensures post links from the index work properly.
+permalink:           pretty
+relative_permalinks: true
+
+# Setup
+title:               Whiteboard v0.1.0
+tagline:             adWhite development team CSS toolkit.
+url:                 http://wb.adwhite.com
+paginate:            1
+baseurl:             ""
+
+# Assets
+#
+# We specify the directory for Jekyll so we can use @imports.
+sass:
+  sass_dir:          _sass
+  style:            :compressed
+
+# About/contact
+author:
+  name:              Juan Olvera
+  url:               https://twitter.com/thinkxl
+  email:             jolvera@adWhite.com
+
+# Custom vars
+version:             0.1.0
+github:
+  repo:              https://github.com/adWhite/whiteboard

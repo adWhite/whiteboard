@@ -1,0 +1,120 @@
+---
+layout: default
+title: Forms
+---
+
+<div class="container">
+  <div class="docs row">
+    {% include sidebar.html %}
+
+    <section class="col-10 docs-body">
+      <h1 class="page-title">Forms</h1>
+
+      <h2>Example Form</h2>
+
+      <form class="form-base" action="">
+        <fieldset>
+          <legend>Inputs</legend>
+
+          <div class="field-group">
+            <label for="input-1">This is a label</label>
+            <input type="text" id="input-1" placeholder="This is a text input" />
+
+            <p class="form-base-help">This is a contextual form-base-help for the field above.</p>
+          </div> <!-- .field-group -->
+
+          <div class="field-group field-error">
+            <label class="form-base-error" for="input-2">Error field</label>
+            <input type="text" id="input-2" placeholder="This is a text input" />
+
+            <p class="form-base-help">This is an error message for the field above.</p>
+          </div> <!-- .field-group -->
+          <div class="field-group">
+            <label for="textarea">This is a label</label>
+            <textarea name="textarea" id="textarea" cols="30" rows="4" placeholder="This is a textarea"></textarea>
+          </div> <!-- .field-group -->
+
+          <div class="field-group">
+            <input type="submit" class="button" value="Submit">
+          </div> <!-- .field-group -->
+        </fieldset>
+      </form>
+
+{% highlight html %}
+<form class="form-base" action="">
+  <fieldset>
+    <legend>Inputs</legend>
+
+    <div class="field-group">
+      <label for="input-1">This is a label</label>
+      <input type="text" id="input-1" placeholder="This is a text input" />
+
+      <p class="form-base-help">This is a contextual form-base-help for the field above.</p>
+    </div> <!-- .field-group -->
+
+    <div class="field-group field-error">
+      <label class="form-base-error" for="input-2">Error field</label>
+      <input type="text" id="input-2" placeholder="This is a text input" />
+
+      <p class="form-base-help">This is an error message for the field above.</p>
+    </div> <!-- .field-group -->
+    <div class="field-group">
+      <label for="textarea">This is a label</label>
+      <textarea name="textarea" id="textarea" cols="30" rows="4" placeholder="This is a textarea"></textarea>
+    </div> <!-- .field-group -->
+
+    <div class="field-group">
+      <input type="submit" class="button" value="Submit">
+    </div> <!-- .field-group -->
+  </fieldset>
+</form>
+{% endhighlight %}
+
+      <form class="form-base" action="">
+        <fieldset>
+          <legend>Radio buttons and checkboxes</legend>
+
+          <div class="field-group">
+            <input type="radio" name="radio" id="radio-1"/>
+            <label class="label-inline" for="radio-1">Radio 1</label>
+
+            <input type="radio" name="radio" id="radio-2"/>
+            <label class="label-inline" for="radio-2">Radio 2</label>
+
+            <input type="radio" name="radio" id="radio-3"/>
+            <label class="label-inline" for="radio-3">Radio 3</label>
+          </div> <!-- .field-group -->
+
+          <div class="field-group">
+            <input type="checkbox" id="checkbox" name="checkbox">
+            <label class="label-inline" for="checkbox">This is a checkbox</label>
+          </div> <!-- .field-group -->
+        </fieldset>
+      </form>
+
+{% highlight html %}
+<form class="form-base" action="">
+  <fieldset>
+    <legend>Radio buttons and checkboxes</legend>
+
+    <div class="field-group">
+      <input type="radio" name="radio" id="radio-1"/>
+      <label class="label-inline" for="radio-1">Radio 1</label>
+
+      <input type="radio" name="radio" id="radio-2"/>
+      <label class="label-inline" for="radio-2">Radio 2</label>
+
+      <input type="radio" name="radio" id="radio-3"/>
+      <label class="label-inline" for="radio-3">Radio 3</label>
+    </div> <!-- .field-group -->
+
+    <div class="field-group">
+      <input type="checkbox" id="checkbox" name="checkbox">
+      <label class="label-inline" for="checkbox">This is a checkbox</label>
+    </div> <!-- .field-group -->
+  </fieldset>
+</form>
+{% endhighlight %}
+    </section> <!-- .docs-body -->
+  </div> <!-- .docs -->
+</div> <!-- .container -->

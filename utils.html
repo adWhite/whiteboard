@@ -1,0 +1,105 @@
+---
+layout: default
+title: Utils
+---
+
+<div class="container">
+  <div class="docs row">
+    {% include sidebar.html %}
+
+    <section class="col-10 docs-body">
+      <h1 class="page-title">Utils</h1>
+
+      <h2>Media block</h2>
+
+      <h3>Aligned left</h3>
+
+      <div class="media-block">
+        <div class="mb-image-left">
+          <img src="http://fakeimg.pl/200x200/282828/eae0d0/" alt="Fake image">
+        </div> <!-- .m-block-image -->
+
+        <div class="m-block-body">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+        </div> <!-- .m-block-image -->
+      </div> <!-- .media-block -->
+
+      {% highlight html %}
+<div class="media-block">
+  <div class="mb-image-left">
+    <img src="http://fakeimg.pl/200x200/282828/eae0d0/" alt="Fake image">
+  </div> <!-- .m-block-image -->
+
+  <div class="m-block-body">
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+  </div> <!-- .m-block-image -->
+</div> <!-- .media-block -->
+      {% endhighlight %}
+
+      <hr>
+
+      <h3>Aligned right</h3>
+
+      <div class="media-block">
+        <div class="mb-image-right">
+          <img src="http://fakeimg.pl/200x200/282828/eae0d0/" alt="Fake image">
+        </div> <!-- .m-block-image -->
+
+        <div class="m-block-body">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+        </div> <!-- .m-block-image -->
+      </div> <!-- .media-block -->
+
+      {% highlight html %}
+<div class="media-block">
+  <div class="mb-image-right">
+    <img src="http://fakeimg.pl/200x200/282828/eae0d0/" alt="Fake image">
+  </div> <!-- .m-block-image -->
+
+  <div class="m-block-body">
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+  </div> <!-- .m-block-image -->
+</div> <!-- .media-block -->
+      {% endhighlight %}
+
+
+      <h2>Text alignment</h2>
+
+      <div class="clearfix">
+        <p class="text-left">Text left aligned.</p>
+        <p class="text-center">Text center aligned.</p>
+        <p class="text-right">Text right aligned.</p>
+      </div> <!-- .clearfix -->
+
+      {% highlight html %}
+<div class="clearfix">
+  <p class="align-left">Text left aligned.</p>
+  <p class="align-right">Text right aligned.</p>
+</div> <!-- .clearfix -->
+      {% endhighlight %}
+
+      <hr>
+
+      <h2>Centered content</h2>
+
+      <div class="clearfix">
+        <img class="centered" src="http://fakeimg.pl/439x320/282828/eae0d0/" alt="Fake image">
+      </div> <!-- .clearfix -->
+
+      {% highlight html %}
+<div class="clearfix">
+  <img class="centered" src="http://fakeimg.pl/439x320/282828/eae0d0/" alt="Fake image">
+</div> <!-- .clearfix -->
+      {% endhighlight %}
+
+    </section> <!-- .docs-body -->
+  </div> <!-- .docs -->
+</div> <!-- .container -->

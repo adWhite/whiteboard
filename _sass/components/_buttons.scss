@@ -1,0 +1,60 @@
+/*
+ * Buttons 
+ */
+
+.button-static {
+	display: inline-block;
+	padding: 0.5em 1em;
+	border: 0;
+	border-radius: $wb-btn-border-radius;
+	text-decoration: none;
+	font-family: inherit;
+	font-family: inherit;
+	line-height: 1;
+	cursor: pointer;
+
+	&:focus {
+		outline: none;	
+	}
+}
+
+@mixin button($wb-background-color, $wb-text-color) {
+	background-color: $wb-background-color;
+	color: $wb-text-color;
+
+	&:hover {
+		background-color: darken($wb-background-color, 15%);
+		color: $wb-text-color;
+	}
+
+	&:active {
+		background-color: darken($wb-background-color, 12%);
+	}
+}
+
+button,
+.button,
+a.button {
+	@extend .button-static;
+	@include button($wb-btn-default-bg, $wb-btn-default-color);
+}
+
+
+a.button-primary,
+.button-primary {
+	@extend .button;
+
+	@include button($wb-btn-primary-bg, $wb-btn-primary-color);
+}
+
+.button-small {
+	@extend .button;
+
+	font-size: $wb-btn-small-font-size;
+}
+
+.button-large {
+	@extend .button;
+
+	font-size: $wb-btn-large-font-size;
+}

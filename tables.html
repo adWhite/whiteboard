@@ -1,0 +1,63 @@
+---
+layout: default
+title: Tables
+---
+
+<div class="container">
+  <div class="docs row">
+    {% include sidebar.html %}
+
+    <section class="col-10 docs-body">
+      <h1 class="page-title">Tables</h1>
+
+      <h2 id="tables">Tabular data</h2>
+
+      <p>Tables should be used when displaying tabular data. The <code>thead</code>, <code>tfoot</code> and <code>tbody</code> elements enable you to group rows within each a table.</p>
+
+      <p>If you use these elements, you must use every element. They should appear in this order: <code>thead</code>, <code>tfoot</code> and <code>tbody</code>, so that browsers can render the foot before receiving all the data. You must use these tags within the table element.</p>
+
+      <div class="example">
+
+        <p>Aenean lacinia bibendum nulla sed consectetur. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+
+        <table>
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>Upvotes</th>
+              <th>Downvotes</th>
+            </tr>
+          </thead>
+
+          <tfoot>
+            <tr>
+              <td>Totals</td>
+              <td>21</td>
+              <td>23</td>
+            </tr>
+          </tfoot>
+
+          <tbody>
+            <tr>
+              <td>Alice</td>
+              <td>10</td>
+              <td>11</td>
+            </tr>
+
+            <tr>
+              <td>Bob</td>
+              <td>4</td>
+              <td>3</td>
+            </tr>
+            
+            <tr>
+              <td>Charlie</td>
+              <td>7</td>
+              <td>9</td>
+            </tr>
+          </tbody>
+        </table>
+      </div> <!-- .example -->
+    </section> <!-- .docs-body -->
+  </div> <!-- .docs -->
+</div> <!-- .container -->

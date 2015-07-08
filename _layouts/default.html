@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  {% include head.html %}
+
+  <body>
+
+    <header class="masthead">
+      <div class="container">
+        <div class="row">
+          <div class="col-8">
+            <h3 class="masthead-title">
+              <a href="{{ site.baseurl }}/" title="Home">{{ site.title }}</a>
+              <small>{{ site.tagline }}</small>
+            </h3>
+          </div> <!-- .col-4 -->
+
+          <div class="col-4">
+            <nav class="menu-horizontal align-right">
+              <ul class="menu-list">
+                <li class="menu-item"><a href="#">Docs</a></li>
+                <li class="menu-item"><a href="#">About</a></li>
+                <li class="menu-item"><a href="#">GitHub</a></li>
+                <li class="menu-item"><a href="#">Install</a></li>
+              </ul>
+            </nav>
+          </div> <!-- .col-8 -->
+        </div> <!-- .row -->
+      </div> <!-- .container -->
+    </header>
+
+    <main>
+      {{ content }}
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="row">
+          <p>Made with love by the <a href="http://adwhite.com">adWhite</a> development team.</p>
+
+          <p>Open sourced under MIT. Copyright <time datetime="{{ site.time | date_to_xmlschema }}">{{ site.time | date: '%Y' }}</time>.</p>
+        </div> <!-- .row -->
+      </div> <!-- .container -->
+    </footer> <!-- .footer -->
+  </body>
+</html>

@@ -1,11 +1,11 @@
 ## Elements to add
 
-- Byline
-- Address
-- Heading group
-- Intro text
-- Grid
-- Images
-- Font family
-- Colors
-- Media block
+- [ ] Byline
+- [ ] Address
+- [ ] Heading group
+- [x] Intro text
+- [x] Grid
+- [ ] Images
+- [x] Font family
+- [x] Colors
+- [x] Media block

@@ -12,6 +12,15 @@ body { margin: 0; }
 .masthead {
 	padding: 1em 0;
 	background-color: $wb-gray-lighter;
+
+	a { 
+		color: $wb-gray-dark;
+
+		&:hover {
+			color: $wb-gray-light;
+			text-decoration: none;
+		}
+	}
 }
 
 .masthead-title {
@@ -19,11 +28,21 @@ body { margin: 0; }
 }
 
 /*
+ * Hero
+ */
+
+.hero {
+	padding: 2em 0;
+	text-align: center;
+	font-size: 1.2em;
+}
+
+/*
  * Main
  */
 
 main {
-	padding: 2em 0;
+	padding-top: 2em;
 }
 
 .page-title {

@@ -62,15 +62,12 @@ $wb-border-radius-small: 3px;
 
 $wb-btn-border-radius: $wb-border-radius-base;
 
-$wb-btn-small-font-size: 0.818#{$wb-base-unit};
-$wb-btn-large-font-size: 1.125#{$wb-base-unit};
-
-$wb-btn-default-bg: #bbb;
+$wb-btn-default-bg: transparent;
 $wb-btn-default-color: #333;
 $wb-btn-default-border: #ccc;
 
 $wb-btn-primary-bg: #0078E7;
-$wb-btn-primary-color: lighten($wb-btn-primary-bg, 50%);
+$wb-btn-primary-color: #fff;
 $wb-btn-primary-border: lighten($wb-btn-primary-bg, 20%);
 
 // Forms

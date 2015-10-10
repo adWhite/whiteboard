@@ -97,11 +97,12 @@ main {
 
 .demo-col {
 	margin-top: 0.618em;
-	display: block;
 	padding: 0.218em 0;
-	border-radius: 3px;
-	background-color: lighten(#7CC3A1, 18%);
+	background-color: #eee;
+	font-size: 0.8em;
+	font-family: $wb-mono-font;
 	text-align: center;
+	border-radius: 3px;
 }
 
 .grid-snippet {

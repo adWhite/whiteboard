@@ -2,19 +2,27 @@
  * Navigation 
  */
 
-.main-navigation {}
+.wb-main-navigation {}
 
-.menu-horizontal {
-	@extend .clearfix;
+/* Menu horizontal */
+.wb-menu-h {
+	@extend .wb-clearfix;
 
 	display: block;
 
-	.menu-item {
+	.wb-menu-item {
 		float: left;
 		margin-right: 1em;
 	}
 }
 
-.menu-vertical {
+/* Menu vertical */
+.wb-menu-v {
+}
 
+/* Menu list */
+.wb-menu-list {
+	list-style: none;
+	margin-left: 0;
+	padding-left: 0;
 }

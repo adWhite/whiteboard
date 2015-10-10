@@ -2,8 +2,7 @@
 
 
 /* Global */
-
-.form-base {
+.wb-form {
   input,
   textarea,
   select,
@@ -31,7 +30,7 @@
 /* Input & textarea */
 
 /* Fields with standard width */
-.form-base {
+.wb-form {
   input[type="text"],
   input[type="email"],
   input[type="password"],
@@ -53,6 +52,7 @@
     max-width: $wb-form-input-max-width;
     padding: $wb-form-input-height / 5;
     background-color: $wb-form-input-bg-color;
+		font-size: 1#{$wb-base-unit};
 
     -webkit-border-radius: $wb-form-border-radius;
     -moz-border-radius: $wb-form-border-radius;
@@ -81,7 +81,7 @@
 
 /* Other */
 
-.form-base {
+.wb-form {
   textarea {
     -webkit-appearance: none;
     overflow: auto;
@@ -116,7 +116,7 @@
 
 /* Select */
 
-.form-base {
+.wb-form {
   select {
     height: $wb-form-input-height;
 
@@ -157,7 +157,7 @@
 
 /* States */
 
-.form-base {
+.wb-form {
   input[disabled],
   textarea[disabled],
   select[disabled],
@@ -189,22 +189,21 @@
 
 /* States & Feedback */
 
-.form-base {
+.wb-form {
 	.label-inline,
 	.checkbox-text {
 		display: inline-block;
 	}
 
-	.form-base-error,
-	.form-base-help {
+	.wb-form-error,
+	.wb-form-help {
 		margin: 0;
 		font-style: italic;
 		font-size: 80%;
 	}
 
 
-	.form-base-error {
+	.wb-form-error {
 		color: brown;
 	}
-
 }

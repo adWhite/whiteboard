@@ -11,7 +11,7 @@ $wb-body-bg: #fff !default;
 // Colors
 
 // Brand colors
-$wb-brand-primary: blue;
+$wb-brand-primary: #3498db;
 
 // Custom colors
 $wb-gray-base: #000;
@@ -66,7 +66,7 @@ $wb-btn-default-bg: transparent;
 $wb-btn-default-color: #333;
 $wb-btn-default-border: #ccc;
 
-$wb-btn-primary-bg: #0078E7;
+$wb-btn-primary-bg: $wb-brand-primary;
 $wb-btn-primary-color: #fff;
 $wb-btn-primary-border: lighten($wb-btn-primary-bg, 20%);
 
@@ -77,15 +77,15 @@ $wb-form-display: block;
 $wb-form-border-radius: 5px;
 $wb-form-border-width: 1px;
 $wb-form-border-style: solid;
-$wb-form-border-color: rgb(200, 200, 200);
+$wb-form-border-color: #ccc;
 
 $wb-form-input-height: 40px;
 $wb-form-input-width: 100%;
 $wb-form-input-max-width: 400px;
 $wb-form-input-bg-color: #fff;
-$wb-form-focus-bg-color: rgb(220, 220, 220);
-$wb-form-focus-border-color: inherit;
-$wb-form-focus-font-color: inherit;
+$wb-form-focus-bg-color: lighten(#eee, 5%);
+$wb-form-focus-border-color: $wb-brand-primary;
+$wb-form-focus-font-color: #aaa;
 
 // Icons
 

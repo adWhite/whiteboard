@@ -37,6 +37,10 @@ body { margin: 0; }
 	font-size: 1.2em;
 }
 
+.lead {
+	font-size: 1.25em;
+}
+
 /*
  * Main
  */
@@ -54,7 +58,7 @@ main {
  */
 
 .colors {
-	@extend .clearfix;
+	@extend .wb-clearfix;
 
 	list-style: none;
 	margin-left: 0;
@@ -62,7 +66,7 @@ main {
 }
 
 .color {
-	@extend .text-center;
+	@extend .wb-text-center;
 
 	float: left;
 	margin-right: 2em;

@@ -2,7 +2,7 @@
  * Feedback
  */
 
-[class^="alert-"] {
+[class^="wb-alert-"] {
 	margin: 1em 0;
 	padding: 0.618em;
 	border: 1px solid;
@@ -21,18 +21,18 @@
 	}
 }
 
-.alert-information {
+.wb-alert-information {
 	@include alert($wb-feedback-color-information);
 }
 
-.alert-error {
+.wb-alert-error {
 	@include alert($wb-feedback-color-error);
 }
 
-.alert-warning {
+.wb-alert-warning {
 	@include alert($wb-feedback-color-warning);
 }
 
-.alert-success {
+.wb-alert-success {
 	@include alert($wb-feedback-color-success);
 }

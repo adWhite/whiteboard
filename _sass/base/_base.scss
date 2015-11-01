@@ -6,45 +6,43 @@
 
 // http://www.paulirish.com/2012/box-sizing-border-box-ftw/
 html {
-	-webkit-box-sizing: border-box;
-		 -moz-box-sizing: border-box;
-					box-sizing: border-box;
+  box-sizing: border-box;
 }
-*, *:before, *:after {
-	-webkit-box-sizing: inherit;
-		 -moz-box-sizing: inherit;
-					box-sizing: inherit;
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
 }
 
 .wb-body {
-	color: $wb-text-color;
-	font-family: $wb-body-font;
-	font-size: $wb-font-size;
-	line-height: $wb-line-height;
-	background-color: $wb-body-bg;
-	-webkit-text-size-adjust: 100%;
-	-ms-text-size-adjust: 100%;
+  color: $wb-text-color;
+  font-family: $wb-body-font;
+  font-size: $wb-font-size;
+  line-height: $wb-line-height;
+  text-size-adjust: 100%;
+  background-color: $wb-body-bg;
 
-	/* No `:visited` state is required by default (browsers will use `a`) */
-	a {
-		color: $wb-link-color;
-		text-decoration: $wb-link-decoration;
+  /* No `:visited` state is required by default (browsers will use `a`) */
+  a {
+    color: $wb-link-color;
+    text-decoration: $wb-link-decoration;
 
-		/* `:focus` is linked to `:hover` for basic accessibility */
-		&:hover,
-		&:focus {
-			text-decoration: $wb-link-hover-decoration;
-		}
+    /* `:focus` is linked to `:hover` for basic accessibility */
+    &:hover,
+    &:focus {
+      text-decoration: $wb-link-hover-decoration;
+    }
 
-		strong {
-			color: inherit;
-		}
-	}
+    strong {
+      color: inherit;
+    }
+  }
 
-	hr {
-		margin: 2em 0;
-		border-top: 1px solid #eee;
-		border-bottom: none;
-	}
+  hr {
+    margin: 2em 0;
+    border-top: 1px solid #eee;
+    border-bottom: 0;
+  }
 }
 

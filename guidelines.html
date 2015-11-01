@@ -1,0 +1,351 @@
+---
+layout: default
+title: Grid
+---
+<div class="container">
+  <div class="docs row">
+    {% include sidebar.html %}
+
+    <section class="col-10 docs-body">
+
+      <h1 class="page-title">CSS Style Guide </h1>
+
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+      <h2>Table of contents</h2>
+
+      <ol>
+        <li><a href="#overview">Overview</a></li>
+        <li><a href="#tools">Tools</a></li>
+        <li><a href="#linting">Linting</a></li>
+        <li><a href="#file-structure">File Structure</a></li>
+        <li><a href="#formatting">Formatting</a></li>
+      </ol>
+
+      <h2><a name="overview">Overview</a></h2>
+
+      <p>To help following this rules, use these configuration files with their corresponding plugins:</p>
+
+      <ul>
+        <li><code>.scss-lint.yml</code></li>
+        <li><code>.editorconfig</code></li>
+        <li><code>.bowerrc</code></li>
+      </ul>
+
+      <h2><a name="tools">Tools</a></h2>
+
+      <p>We compile SCSS, minify, and prefix everything local using Gulp.</p>
+
+      <ul>
+        <li><a href="http://gulpjs.com/">Gulp</a></li>
+        <li><a href="http://bower.io/">Bower</a></li>
+        <li><a href="http://editorconfig.org/">EditorConfig</a></li>
+        <li><a href="https://www.npmjs.com/package/wiredep">Wiredep</a></li>
+        <li><a href="https://www.npmjs.com/package/gulp-autoprefixer">gulp-autoprefixer</a></li>
+        <li><a href="https://www.npmjs.com/package/gulp-minify-css">gulp-minify-css</a></li>
+      </ul>
+
+
+      <h2><a name="linting">Linting</a></h2>
+
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+      <p>The options for scss-lint are stored in <a href="#">here</a>.</p>
+
+      <h2><a name="file-structure">File structure</a></h2>
+
+      {% highlight scss %}
+// Vendors
+// bower:scss
+// endbower
+
+// Utils
+@import "utils/variables";
+@import "utils/utils";
+
+// Base
+@import "base/base";
+@import "base/typo";
+
+// Components
+@import "components/buttons";
+@import "components/icons";
+@import "components/navigation";
+
+// Layout
+@import "layout/header";
+@import "layout/main";
+@import "layout/footer";
+
+// Pages
+@import "pages/home";
+
+// Anything that can be categorized later
+@import "todo";
+{% endhighlight %}
+
+      <h3><code>vendors/</code></h3>
+
+      <p>Use <a href="https://www.npmjs.com/package/wiredep">Wiredep</a> to inject our dependencies directly into <code>style.scss</code>.</p>
+
+      <h3><code>utils/</code></h3>
+
+      <p>Here are the files that have functions, mixins, extends, or classes that we use more than once in different folders.</p>
+
+      <h3><code>base/</code></h3>
+
+      <p>Basic styles like <code>html</code>, <code>body</code>, <code>p</code>, and <code>a</code> tags.</p>
+
+      <h3><code>components/</code></h3>
+
+      <p>UI components that can be used to build layouts.</p>
+
+      <h3><code>layout/</code></h3>
+
+      <p>Header, footer, sidebar and other elements that makes the site structure.</p>
+
+      <p>Layouts are built with components. We code the header with the <code>.site-logo</code>, <code>.site-navigation</code>, and <code>.social-icons</code> components and make them work together inside the <code>_header.scss</code> layout.</p>
+
+      <h3><code>pages/</code></h3>
+
+      <p>Styles for specific pages:</p>
+
+      <ul>
+        <li><code>_home.scss</code></li>
+        <li><code>_contact.scss</code></li>
+        <li><code>_portfolio.scss</code></li>
+      </ul>
+
+      <h2><a name="formatting">Formatting</a></h2>
+
+      <ul>
+        <li>For indentation use 2 spaces, not 4 spaces or tabs.</li>
+        <li>1 selector or parameter per line.</li>
+        <li>No whitespace at the end of the line.</li>
+        <li>Put a blank line between rule declarations.</li>
+        <li>Add single a space after <code>:</code>.</li>
+        <li>Add a space before <code>{</code> in rule declaration.</li>
+        <li>Closing <code>}</code> on its own line.</li>
+        <li>When listing multiple selectors associated with the same CSS rule, add a new line after each <code>,</code>.</li>
+        <li>Use hyphens for class names, not underscores or camelCase.</li>
+        <li>No spaces within <code>()</code> for urls.</li>
+        <li>Use hex color codes (<code>#5c8fb3</code>) unless using <code>rgba()</code></li>
+        <li>Use <code>em</code> over <code>px</code>, unless unavoidable.</li>
+        <li>Don&#8217;t specify units for 0 values.</li>
+        <li>Omit leading zeros in decimal values.</li>
+        <li>Use double quotes instead of single quotes.</li>
+        <li>Always have a semicolon at the end of each declaration.</li>
+        <li>Avoid the use of <code>!important</code>.</li>
+      </ul>
+
+{% highlight css %}
+/* Bad */
+.site_header {
+  background-color : #FFF;
+  background-image : url( ‘/img/background.jpg’ );
+  display : block;
+  position : relative;
+  width : 100%; }
+
+.site-logo, .site-menu {
+  margin-right: 0.618em;
+  padding-top: 16px; 
+  padding-right: 0px; }
+
+/* Good */
+.site-header {
+  position: relative;
+  display: block;
+  width: 100%;
+  background-color: #fff;
+  background-image: url(“/img/background.jpg”);
+}
+
+.site-logo,
+.site-menu {
+  padding: 1em 0;
+  margin-right: .618em;
+}
+{% endhighlight %}
+
+          <h3>Declaration order</h3>
+
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.</p>
+
+          <ul>
+            <li>Position</li>
+            <li>Box model</li>
+            <li>Typography</li>
+            <li>Visual</li>
+          </ul>
+
+{% highlight css %}
+.selector {
+  /* Position */
+  position: absolute;
+  top: 0;
+  right: 0;
+
+  /* Box model */
+  display: block;
+  float: right;
+  width: 6em;
+
+  /* Typography */
+  font: normal 13px "Helvetica Neue", sans-serif;
+  line-height: 1.5;
+  color: #333;
+
+  /* Visual */
+  background-color: #f5f5f5;
+  border: 1px solid #e5e5e5;
+  opacity: 1;
+}
+{% endhighlight %}
+
+        <h3>Comments</h3>
+
+        <p>Comments start with a capital first letter, but don&#8217;t require a period at the end, unless you&#8217;re writing full sentences. There must be a single space between the comment token and the comment text.</p>
+
+        <p>On CSS, when comments take up multiple lines, use a <code>*</code> at the beginning of each line. There must be a space between the first word and the <code>*</code> on each line.</p>
+
+{% highlight css %}
+/* Good single line comment */
+
+/*
+ * Good example of a multi-line comment.
+ * If your comment takes up multiple lines, please do this.
+ */
+{% endhighlight %}
+
+        <p>On SCSS, single and multiple lines use <code>//</code> at the beginning of each line.</p>
+
+{% highlight scss %}
+// Good single line comment
+
+//
+// Good example of a multi-line comment.
+// If your comment takes up multiple lines, please do this.
+//
+{% endhighlight %}
+
+        <h3>SCSS general formatting</h3>
+
+        <p>Avoid unnecessary nesting.</p>
+
+{% highlight scss %}
+// Bad
+.site-header {
+  .logo {
+    img {
+      float: left;
+      margin-right: 1em;
+    }
+  }
+}
+
+// Good
+.site-logo-img {
+  float: left;
+  margin-right: 1em;
+}
+{% endhighlight %}
+
+        <p>Order extend/inheritance by:</p>
+
+        <ul>
+          <li><code>@extend</code>s</li>
+          <li><code>@include</code>s</li>
+          <li>Regular styles</li>
+          <li>Nested pseudo classes and pseudo elements</li>
+          <li>Nested selectors</li>
+        </ul>
+
+{% highlight scss %}
+// Bad
+.site-header {
+  background-color: #eee;
+  .site-logo {
+    float: left;
+    display: block;
+  }
+  &:hover {
+    background-color: #fff;
+  }
+  &::before {
+    background-color: #ccc;
+  }
+  @extend %clearfix;
+  @include .module
+}
+
+// Good
+.site-header {
+  @extend %clearfix;
+  @include .module
+
+  background-color: #eee;
+
+  &:hover {
+    background-color: #fff;
+  }
+
+  &::before {
+    background-color: #ccc;
+  }
+
+  .site-logo {
+    float: left;
+    display: block;
+  }
+}
+{% endhighlight %}
+
+        <p>Don’t hardcode colors, use variables instead.</p>
+
+{% highlight scss %}
+// Bad
+.entry-title {
+  color: #1d4178;
+}
+
+// Good
+// _variables.scss
+$brand-primary-color: #1d4178;
+
+// _main.scss
+.entry-title {
+  color: $brand-primary-color;
+}
+{% endhighlight %}
+
+        <p>Nest your media queries.</p>
+
+{% highlight scss %}
+// Bad
+.site-header {
+  float: left;
+  width: 50%;
+}
+
+@media (min-width: 48em) {
+  .site-header {
+    float: none;
+    width: 100%;
+  }
+}
+
+// Good
+.site-header {
+  float: left;
+  width: 50%;
+
+  @media (min-width: 48em) {
+    float: none;
+    width: 100%;
+  }
+}
+{% endhighlight %}
+      </section> <!-- .docs-body -->
+    </div> <!-- .docs -->
+  </div> <!-- .container -->

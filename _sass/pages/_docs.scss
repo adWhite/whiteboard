@@ -10,21 +10,21 @@ body { margin: 0; }
  */
 
 .masthead {
-	padding: 1em 0;
-	background-color: $wb-gray-lighter;
+  padding: 1em 0;
+  background-color: $wb-gray-lighter;
 
-	a { 
-		color: $wb-gray-dark;
+  a { 
+    color: $wb-gray-dark;
 
-		&:hover {
-			color: $wb-gray-light;
-			text-decoration: none;
-		}
-	}
+    &:hover {
+      color: $wb-gray-light;
+      text-decoration: none;
+    }
+  }
 }
 
 .masthead-title {
-	margin: 0;
+  margin: 0;
 }
 
 /*
@@ -32,13 +32,13 @@ body { margin: 0; }
  */
 
 .hero {
-	padding: 2em 0;
-	text-align: center;
-	font-size: 1.2em;
+  padding: 2em 0;
+  text-align: center;
+  font-size: 1.2em;
 }
 
 .lead {
-	font-size: 1.25em;
+  font-size: 1.25em;
 }
 
 /*
@@ -46,11 +46,11 @@ body { margin: 0; }
  */
 
 main {
-	padding-top: 2em;
+  padding-top: 2em;
 }
 
 .page-title {
-	margin-top: 0;
+  margin-top: 0;
 }
 
 /*
@@ -58,25 +58,25 @@ main {
  */
 
 .colors {
-	@extend .wb-clearfix;
+  @extend .wb-clearfix;
 
-	list-style: none;
-	margin-left: 0;
-	padding-left: 0;
+  list-style: none;
+  margin-left: 0;
+  padding-left: 0;
 }
 
 .color {
-	@extend .wb-text-center;
+  @extend .wb-text-center;
 
-	float: left;
-	margin-right: 2em;
+  float: left;
+  margin-right: 2em;
 }
 
 .color-circle {
-	display: block;
-	width: 80px;
-	height: 80px;
-	border-radius: 50%;
+  display: block;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
 }
 
 .color-brand-one { background-color: #eee; }
@@ -88,7 +88,7 @@ main {
  */
 
 .footer {
-	text-align: center;
+  text-align: center;
 }
 
 /*
@@ -96,71 +96,67 @@ main {
  */
 
 .grid-notes {
-	@include cols(4);
+  @include cols(4);
 }
 
 .demo-col {
-	margin-top: 0.618em;
-	padding: 0.218em 0;
-	background-color: #eee;
-	font-size: 0.8em;
-	font-family: $wb-mono-font;
-	text-align: center;
-	border-radius: 3px;
+  margin-top: 0.618em;
+  padding: 0.218em 0;
+  background-color: #eee;
+  font-size: 0.8em;
+  font-family: $wb-mono-font;
+  text-align: center;
+  border-radius: 3px;
 }
 
 .grid-snippet {
-	@include cols(8, 0);
+  @include cols(8, 0);
 }
-
-/*
- * Code
- */
 
 /* Code */
 code,
 pre {
-	font-family: Menlo, Monaco, "Courier New", monospace;
+  font-family: Menlo, Monaco, "Courier New", monospace;
 }
 
 code {
-	padding: .25em .5em;
-	color: #bf616a;
-	background-color: #f9f9f9;
-	border-radius: 6px;
+  padding: 3px 4px;
+  color: #bf616a;
+  background-color: #f9f9f9;
+  border-radius: 3px;
 }
 
 pre {
-	display: block;
-	margin-top: 0;
-	margin-bottom: 1rem;
-	padding: 1rem;
-	font-size: 0.85em;
-	line-height: 1.4;
-	white-space: pre;
-	white-space: pre-wrap;
-	word-break: break-all;
-	word-wrap: break-word;
-	background-color: #f9f9f9;
-	border-radius: 6px;
-	border: 1px solid #ccc;
+  display: block;
+  margin-top: 0;
+  margin-bottom: 1rem;
+  padding: 1rem;
+  font-size: 0.85em;
+  line-height: 1.4;
+  white-space: pre;
+  white-space: pre-wrap;
+  word-break: break-all;
+  word-wrap: break-word;
+  background-color: #f9f9f9;
+  border-radius: 6px;
+  border: 1px solid #ccc;
 }
 
 pre code {
-	padding: 0;
-	font-size: 100%;
-	color: inherit;
-	background-color: transparent;
+  padding: 0;
+  font-size: 100%;
+  color: inherit;
+  background-color: transparent;
 }
 
 /* Pygments via Jekyll */
 .highlight {
-	margin-bottom: 1rem;
-	border-radius: 4px;
+  margin-bottom: 1rem;
+  border-radius: 4px;
 }
 
 .highlight pre {
-	margin-bottom: 0;
+  margin-bottom: 0;
 }
 
 /*

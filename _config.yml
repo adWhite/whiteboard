@@ -13,7 +13,7 @@ title:               Whiteboard v0.1.0
 tagline:             adWhite development team CSS toolkit.
 url:                 http://adwhite.github.io/whiteboard/
 paginate:            1
-baseurl:             ""
+baseurl:             "/whiteboard"
 
 # Assets
 #

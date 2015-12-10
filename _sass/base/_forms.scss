@@ -2,6 +2,7 @@
 
 
 /* Global */
+
 .wb-form {
   input,
   textarea,
@@ -23,14 +24,12 @@
 
   label {
     display: $wb-form-display;
-		margin-bottom: 0;
+    margin-bottom: 0;
   }
-}
 
-/* Input & textarea */
+  /* Input & textarea */
 
-/* Fields with standard width */
-.wb-form {
+  /* Fields with standard width */
   input[type="text"],
   input[type="email"],
   input[type="password"],
@@ -52,10 +51,8 @@
     max-width: $wb-form-input-max-width;
     padding: $wb-form-input-height / 5;
     background-color: $wb-form-input-bg-color;
-		font-size: 1#{$wb-base-unit};
+    font-size: 1#{$wb-base-unit};
 
-    -webkit-border-radius: $wb-form-border-radius;
-    -moz-border-radius: $wb-form-border-radius;
     border-radius: $wb-form-border-radius;
     border: $wb-form-border-width $wb-form-border-style $wb-form-border-color;
   }
@@ -77,11 +74,9 @@
   input[list] {
     -webkit-appearance: none;
   }
-}
 
-/* Other */
+  /* Other */
 
-.wb-form {
   textarea {
     -webkit-appearance: none;
     overflow: auto;
@@ -111,21 +106,11 @@
     display: inline-block;
     vertical-align: middle;
   }
-}
 
+  /* Select */
 
-/* Select */
-
-.wb-form {
   select {
     height: $wb-form-input-height;
-
-    // @if $wb-form-allow-vendor-styling == false {
-    //   -webkit-appearance: none;
-    //   -moz-appearance: none;
-    //   -ms-appearance: none;
-    //   -o-appearance: none;
-    // }
   }
 
   select[multiple] {
@@ -142,22 +127,18 @@
   /* Fieldset */
 
   fieldset {
-		padding: 10px 25px;
-		-webkit-border-radius: $wb-form-border-radius;
-		-moz-border-radius: $wb-form-border-radius;
-		border-radius: $wb-form-border-radius;
-		border: $wb-form-border-width $wb-form-border-style $wb-form-border-color;
-	}
+    padding: 10px 25px;
+    border-radius: $wb-form-border-radius;
+    border: $wb-form-border-width $wb-form-border-style $wb-form-border-color;
+  }
 
   legend {
-		padding: 0;
-		font-weight: inherit;
+    padding: 0;
+    font-weight: inherit;
   }
-}
 
-/* States */
+  /* States */
 
-.wb-form {
   input[disabled],
   textarea[disabled],
   select[disabled],
@@ -170,7 +151,7 @@
   textarea:focus,
   select:focus,
   option:focus,
-  button:focus  {
+  button:focus {
     background-color: $wb-form-focus-bg-color;
     border-color: $wb-form-focus-border-color;
   }
@@ -184,26 +165,26 @@
 /* Field Group Styles */
 
 .field-group {
-	margin-bottom: 1em;
+  margin-bottom: 1em;
 }
 
 /* States & Feedback */
 
 .wb-form {
-	.label-inline,
-	.checkbox-text {
-		display: inline-block;
-	}
+  .label-inline,
+  .checkbox-text {
+    display: inline-block;
+  }
 
-	.wb-form-error,
-	.wb-form-help {
-		margin: 0;
-		font-style: italic;
-		font-size: 80%;
-	}
+  .wb-form-error,
+  .wb-form-help {
+    margin: 0;
+    font-style: italic;
+    font-size: 80%;
+  }
 
 
-	.wb-form-error {
-		color: brown;
-	}
+  .wb-form-error {
+    color: brown;
+  }
 }

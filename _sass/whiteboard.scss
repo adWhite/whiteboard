@@ -16,37 +16,36 @@
 
 // Vendors
 
-@import "plugins/fraction";
+@import 'plugins/fraction';
 
 // Utils
 
-@import "utils/variables";
-@import "utils/utils";
+@import 'utils/variables';
+@import 'utils/utils';
 
 // Base
 
-@import "base/base";
-@import "base/forms";
-@import "base/typo";
+@import 'base/base';
+@import 'base/forms';
+@import 'base/typo';
 
 // Components
 
-@import "components/buttons";
-@import "components/feedback";
-@import "components/icons";
-@import "components/images";
-@import "components/navigation";
-@import "components/tables";
+@import 'components/buttons';
+@import 'components/feedback';
+@import 'components/images';
+@import 'components/navigation';
+@import 'components/tables';
 
 // Layout
 
-@import "layout/container";
-@import "layout/footer";
-@import "layout/grid";
-@import "layout/header";
-@import "layout/main";
-@import "layout/sidebar";
+@import 'layout/container';
+@import 'layout/footer';
+@import 'layout/grid';
+@import 'layout/header';
+@import 'layout/main';
+@import 'layout/sidebar';
 
 // Pages
 
-@import "pages/docs";
+@import 'pages/docs';

@@ -5,7 +5,7 @@
 
 body { margin: 0; }
 
-/* 
+/*
  * Header
  */
 
@@ -13,7 +13,7 @@ body { margin: 0; }
   padding: 1em 0;
   background-color: $wb-gray-lighter;
 
-  a { 
+  a {
     color: $wb-gray-dark;
 
     &:hover {
@@ -54,11 +54,11 @@ main {
 }
 
 /*
- * Colors 
+ * Colors
  */
 
 .colors {
-  @extend .wb-clearfix;
+  @extend .clearfix;
 
   list-style: none;
   margin-left: 0;
@@ -66,7 +66,7 @@ main {
 }
 
 .color {
-  @extend .wb-text-center;
+  @extend .text-center;
 
   float: left;
   margin-right: 2em;

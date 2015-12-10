@@ -1,28 +1,29 @@
 /*
- * Navigation 
+ * Navigation
  */
 
-.wb-main-navigation {}
+// .main-navigation {}
 
 /* Menu horizontal */
-.wb-menu-h {
-	@extend .wb-clearfix;
 
-	display: block;
+.menu-h {
+  @extend .clearfix;
 
-	.wb-menu-item {
-		float: left;
-		margin-right: 1em;
-	}
+  display: block;
+
+  .menu-item {
+    float: left;
+    margin-right: 1em;
+  }
 }
 
 /* Menu vertical */
-.wb-menu-v {
-}
+
+.menu-v {}
 
 /* Menu list */
-.wb-menu-list {
-	list-style: none;
-	margin-left: 0;
-	padding-left: 0;
+.menu-list {
+  list-style: none;
+  margin-left: 0;
+  padding-left: 0;
 }

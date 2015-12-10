@@ -2,37 +2,37 @@
  * Feedback
  */
 
-[class^="wb-alert-"] {
-	margin: 1em 0;
-	padding: 0.618em;
-	border: 1px solid;
+[class^="alert-"] {
+  margin: 1em 0;
+  padding: 0.618em;
+  border: 1px solid;
 
-	p {
-		margin: 0;
-	}
+  p {
+    margin: 0;
+  }
 }
 
 @mixin alert($wb-color) {
-	border-color: lighten($wb-color, 30%);
-	background-color: lighten($wb-color, 45%);
+  border-color: lighten($wb-color, 30%);
+  background-color: lighten($wb-color, 45%);
 
-	strong {
-		color: $wb-color;
-	}
+  strong {
+    color: $wb-color;
+  }
 }
 
-.wb-alert-information {
-	@include alert($wb-feedback-color-information);
+.alert-info {
+  @include alert($wb-feedback-color-information);
 }
 
-.wb-alert-error {
-	@include alert($wb-feedback-color-error);
+.alert-error {
+  @include alert($wb-feedback-color-error);
 }
 
-.wb-alert-warning {
-	@include alert($wb-feedback-color-warning);
+.alert-warning {
+  @include alert($wb-feedback-color-warning);
 }
 
-.wb-alert-success {
-	@include alert($wb-feedback-color-success);
+.alert-success {
+  @include alert($wb-feedback-color-success);
 }

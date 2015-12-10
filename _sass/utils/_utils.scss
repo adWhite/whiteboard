@@ -8,43 +8,43 @@
 }
 
 // Helpers
-.wb-full-width {
+.full-width {
 	width: 100%;
 }
 
-.wb-max-full-width {
+.max-full-width {
 	max-width: 100%;
 }
 
-.wb-align-left {
+.align-left {
   display: inline;
   float: left;
   margin-right: 1.5#{$wb-base-unit};
 }
 
-.wb-align-right {
+.align-right {
   display: inline;
   float: right;
 	margin-left: 1.5#{$wb-base-unit};
 }
 
-.wb-centered,
-.wb-align-center {
+.centered,
+.align-center {
   display: block;
   margin-left: auto;
   margin-right: auto;
 }
 
 // Text alignment
-.wb-text-left {
+.text-left {
 	text-align: left;
 }
 
-.wb-text-right {
+.text-right {
 	text-align: right;
 }
 
-.wb-text-center {
+.text-center {
 	text-align: center;
 }
 
@@ -52,7 +52,7 @@
 // Hide only visually, but have it available for screen readers:
 // http://snook.ca/archives/html_and_css/hiding-content-for-accessibility
 //
-.wb-visuallyhidden {
+.visuallyhidden {
   border: 0;
   clip: rect(0 0 0 0);
   height: 1px;
@@ -74,10 +74,10 @@
 // 2. The use of `table` rather than `block` is only necessary if using
 //    `:before` to contain the top-margins of child elements.
 //
-.wb-clearfix {
+.clearfix {
   &:before,
   &:after {
-    content: " "; /* 1 */
+    content: ' '; /* 1 */
     display: table; /* 2 */
   }
 

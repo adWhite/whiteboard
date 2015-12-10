@@ -15,6 +15,7 @@ $wb-brand-primary: #3498db;
 
 // Custom colors
 $wb-gray-base: #000;
+
 $wb-gray-darker: #222;
 $wb-gray-dark: #333;
 $wb-gray: #555;
@@ -39,10 +40,11 @@ $wb-link-decoration: none;
 $wb-link-hover-decoration: underline;
 $wb-link-hover-color: darken($wb-link-color, 15%) !default;
 
-$wb-font-size-h1: 2.225#{$wb-base-unit};
-$wb-font-size-h2: 1.718#{$wb-base-unit};
-$wb-font-size-h3: 1.375#{$wb-base-unit};
-$wb-font-size-h4: 1#{$wb-base-unit};
+// http://www.modularscale.com/?1,.5&em&1.618&sass&text
+$wb-font-size-h1: 2.618#{$wb-base-unit};
+$wb-font-size-h2: 2.118#{$wb-base-unit};
+$wb-font-size-h3: 1.618#{$wb-base-unit};
+$wb-font-size-h4: 1.309#{$wb-base-unit};
 $wb-font-size-h5: 1#{$wb-base-unit};
 $wb-font-size-h6: 1#{$wb-base-unit};
 

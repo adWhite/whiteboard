@@ -11,7 +11,7 @@ relative_permalinks: true
 # Setup
 title:               Whiteboard v0.1.0
 tagline:             adWhite development team CSS toolkit.
-url:                 http://wb.adwhite.com
+url:                 http://adwhite.github.io/whiteboard/
 paginate:            1
 baseurl:             ""
 

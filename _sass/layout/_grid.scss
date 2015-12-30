@@ -6,8 +6,9 @@
 $gutter: 3%;
 @include namespace('col-');
 
-// Asymmetric
 @for $i from 1 through 12 {
+
+  // Asymmetric
   .col-1-#{$i} {
     @include cols(12);
 
@@ -15,9 +16,7 @@ $gutter: 3%;
       @include fraction(1 / $i);
     }
   }
-}
 
-@for $i from 1 through 12 {
   .span-1-#{$i} {
     @include cols(12);
 
@@ -25,10 +24,8 @@ $gutter: 3%;
       @include fraction(1 / $i, 0%, 0%);
     }
   }
-}
 
-// Symmetric
-@for $i from 1 through 12 {
+  // Symmetric
   .col-#{$i} {
     @include cols(12);
 
@@ -36,9 +33,7 @@ $gutter: 3%;
       @include cols($i);
     }
   }
-}
 
-@for $i from 1 through 12 {
   .span-#{$i} {
     @include cols(12);
 

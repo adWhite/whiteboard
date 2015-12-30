@@ -2,8 +2,8 @@
  * Buttons
  */
 
-// Basic button structure
-%button-static {
+// Basic btn structure
+%btn-static {
   display: inline-block;
   padding: .5em 2em;
   border: 0;
@@ -22,7 +22,7 @@
 }
 
 // Style the button
-@mixin button($background-color, $text-color, $border-color) {
+@mixin btn($background-color, $text-color, $border-color) {
   color: $text-color;
   background-color: $background-color;
   border: 1px solid $border-color;
@@ -40,12 +40,12 @@
   }
 }
 
-a.button,
-button.button,
-.button {
-  @extend %button-static;
+a.btn-outline,
+button.btn-outline,
+.btn-outline {
+  @extend %btn-static;
 
-  @include button($wb-btn-default-bg, $wb-btn-default-color, lighten($wb-btn-default-color, 40%));
+  @include btn($wb-btn-default-bg, $wb-btn-default-color, lighten($wb-btn-default-color, 40%));
 
   &:hover {
     border-color: lighten($wb-btn-default-color, 10%);
@@ -53,10 +53,10 @@ button.button,
 }
 
 
-a.button-primary,
-button.button-primary,
-.button-primary {
-  @extend .button;
+a.btn-primary,
+button.btn-primary,
+.btn-primary {
+  @extend %btn-static;
 
-  @include button($wb-btn-primary-bg, $wb-btn-primary-color, $wb-btn-primary-bg);
+  @include btn($wb-btn-primary-bg, $wb-btn-primary-color, $wb-btn-primary-bg);
 }

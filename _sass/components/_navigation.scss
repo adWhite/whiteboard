@@ -8,7 +8,7 @@
  * Menu horizontal
  */
 
-.menu-h {
+.wb-menu-bar {
   @extend .clearfix;
 
   display: block;
@@ -19,17 +19,18 @@
   }
 }
 
+
 /*
  * Menu vertical
  */
 
-// .menu-v {}
+// .wb-menu {}
 
 /*
  * Menu list
  */
 
-.menu-list {
+.wb-menu-list {
   list-style: none;
   margin-left: 0;
   padding-left: 0;

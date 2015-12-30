@@ -10,7 +10,7 @@ title: Forms
     <section class="col-10 docs-body">
       <h1 class="page-title">Forms</h1>
 
-      <h2>Example Form</h2>
+      <hr class="hr-docs">
 
       <form class="wb-form" action="">
         <fieldset>
@@ -36,6 +36,30 @@ title: Forms
 
           <div class="field-group">
             <input type="submit" class="wb-button" value="Submit">
+          </div> <!-- .field-group -->
+        </fieldset>
+      </form>
+
+      <br>
+
+      <form class="wb-form" action="">
+        <fieldset>
+          <legend>Radio buttons and checkboxes</legend>
+
+          <div class="field-group">
+            <input type="radio" name="radio" id="radio-1"/>
+            <label class="label-inline" for="radio-1">Radio 1</label>
+
+            <input type="radio" name="radio" id="radio-2"/>
+            <label class="label-inline" for="radio-2">Radio 2</label>
+
+            <input type="radio" name="radio" id="radio-3"/>
+            <label class="label-inline" for="radio-3">Radio 3</label>
+          </div> <!-- .field-group -->
+
+          <div class="field-group">
+            <input type="checkbox" id="checkbox" name="checkbox">
+            <label class="label-inline" for="checkbox">This is a checkbox</label>
           </div> <!-- .field-group -->
         </fieldset>
       </form>
@@ -68,31 +92,7 @@ title: Forms
     </div> <!-- .field-group -->
   </fieldset>
 </form>
-{% endhighlight %}
 
-      <form class="wb-form" action="">
-        <fieldset>
-          <legend>Radio buttons and checkboxes</legend>
-
-          <div class="field-group">
-            <input type="radio" name="radio" id="radio-1"/>
-            <label class="label-inline" for="radio-1">Radio 1</label>
-
-            <input type="radio" name="radio" id="radio-2"/>
-            <label class="label-inline" for="radio-2">Radio 2</label>
-
-            <input type="radio" name="radio" id="radio-3"/>
-            <label class="label-inline" for="radio-3">Radio 3</label>
-          </div> <!-- .field-group -->
-
-          <div class="field-group">
-            <input type="checkbox" id="checkbox" name="checkbox">
-            <label class="label-inline" for="checkbox">This is a checkbox</label>
-          </div> <!-- .field-group -->
-        </fieldset>
-      </form>
-
-{% highlight html %}
 <form class="wb-form" action="">
   <fieldset>
     <legend>Radio buttons and checkboxes</legend>

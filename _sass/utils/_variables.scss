@@ -14,8 +14,7 @@ $wb-body-bg: #fff !default;
 $wb-brand-primary: #3498db;
 
 // Custom colors
-$wb-gray-base: #000;
-
+$wb-color-gray-base: #000;
 $wb-gray-darker: #222;
 $wb-gray-dark: #333;
 $wb-gray: #555;
@@ -28,15 +27,11 @@ $wb-brown: rgb(165, 42, 42);
 
 $wb-body-font: 'Lato', sans-serif;
 $wb-mono-font: 'Menlo', Inconsolata, Consolas, Monaco, monospace;
-
 $wb-font-size: 16px;
-
 $wb-line-height: 1.618 !default;
-
 $wb-text-color: #333 !default;
 $wb-text-margin-top: $wb-baseline !default;
 $wb-text-margin-bottom: $wb-baseline !default;
-
 $wb-link-color: $wb-brand-primary !default;
 $wb-link-decoration: none;
 $wb-link-hover-decoration: underline;
@@ -87,6 +82,7 @@ $wb-form-input-height: 40px;
 $wb-form-input-width: 100%;
 $wb-form-input-max-width: 400px;
 $wb-form-input-bg-color: #fff;
+
 $wb-form-focus-bg-color: lighten($wb-gray-lighter, 5%);
 $wb-form-focus-border-color: $wb-brand-primary;
 $wb-form-focus-font-color: #aaa;

@@ -2,7 +2,7 @@
  * Feedback
  */
 
-[class^="alert-"] {
+[class^="wb-alert-"] {
   margin: 1em 0;
   padding: .618em;
   border: 1px solid;
@@ -15,24 +15,25 @@
 @mixin alert($wb-color) {
   border-color: lighten($wb-color, 30%);
   background-color: lighten($wb-color, 45%);
+  border-radius: 4px;
 
   strong {
     color: $wb-color;
   }
 }
 
-.alert-info {
+.wb-alert-info {
   @include alert($wb-feedback-color-information);
 }
 
-.alert-error {
+.wb-alert-error {
   @include alert($wb-feedback-color-error);
 }
 
-.alert-warning {
+.wb-alert-warning {
   @include alert($wb-feedback-color-warning);
 }
 
-.alert-success {
+.wb-alert-success {
   @include alert($wb-feedback-color-success);
 }

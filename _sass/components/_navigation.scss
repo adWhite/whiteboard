@@ -1,10 +1,12 @@
-/*
+/**
  * Navigation
  */
 
 // .main-navigation {}
 
-/* Menu horizontal */
+/*
+ * Menu horizontal
+ */
 
 .menu-h {
   @extend .clearfix;
@@ -17,11 +19,16 @@
   }
 }
 
-/* Menu vertical */
+/*
+ * Menu vertical
+ */
 
-.menu-v {}
+// .menu-v {}
 
-/* Menu list */
+/*
+ * Menu list
+ */
+
 .menu-list {
   list-style: none;
   margin-left: 0;

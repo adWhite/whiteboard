@@ -2,7 +2,7 @@
 //
 // Global styles.
 
-$wb-base-unit: 'em' !default;
+$wb-base-unit: 'rem' !default;
 $wb-baseline: 1#{$wb-base-unit} !default;
 $wb-grid-gutter: 1% !default;
 $wb-container-width: 61.25#{$wb-base-unit} !default; // 980px
@@ -22,9 +22,11 @@ $wb-gray: #555;
 $wb-gray-light: #777;
 $wb-gray-lighter: #eee;
 
+$wb-brown: rgb(165, 42, 42);
+
 // Typography
 
-$wb-body-font: 'Roboto', sans-serif;
+$wb-body-font: 'Lato', sans-serif;
 $wb-mono-font: 'Menlo', Inconsolata, Consolas, Monaco, monospace;
 
 $wb-font-size: 16px;
@@ -85,7 +87,7 @@ $wb-form-input-height: 40px;
 $wb-form-input-width: 100%;
 $wb-form-input-max-width: 400px;
 $wb-form-input-bg-color: #fff;
-$wb-form-focus-bg-color: lighten(#eee, 5%);
+$wb-form-focus-bg-color: lighten($wb-gray-lighter, 5%);
 $wb-form-focus-border-color: $wb-brand-primary;
 $wb-form-focus-font-color: #aaa;
 

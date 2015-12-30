@@ -1,6 +1,7 @@
 /*
+ * Whiteboard V0.2.0
  * Released under MIT license by @thinkxl. Learn more at
- * https://github.com/thinkxl/pattern-library.
+ * https://adWhite.github.io/whiteboard
  */
 
 //
@@ -16,7 +17,7 @@
 
 // Vendors
 
-@import 'plugins/fraction';
+@import 'plugins/tequila';
 
 // Utils
 
@@ -28,6 +29,7 @@
 @import 'base/base';
 @import 'base/forms';
 @import 'base/typo';
+@import 'base/tables';
 
 // Components
 
@@ -35,11 +37,9 @@
 @import 'components/feedback';
 @import 'components/images';
 @import 'components/navigation';
-@import 'components/tables';
 
 // Layout
 
-@import 'layout/container';
 @import 'layout/footer';
 @import 'layout/grid';
 @import 'layout/header';

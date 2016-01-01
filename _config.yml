@@ -9,7 +9,7 @@ permalink:           pretty
 relative_permalinks: true
 
 # Setup
-title:               Whiteboard v0.1.0
+title:               Whiteboard v0.2.0
 tagline:             adWhite development team CSS toolkit.
 url:                 http://adwhite.github.io/whiteboard/
 paginate:            1

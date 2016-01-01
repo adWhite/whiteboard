@@ -6,7 +6,6 @@
 %btn-static {
   display: inline-block;
   padding: .5em 2em;
-  border: 0;
   text-decoration: none;
   text-align: center;
   font-family: inherit;
@@ -14,6 +13,7 @@
   white-space: nowarp;
   line-height: 1;
   cursor: pointer;
+  border: 0;
   border-radius: $wb-btn-border-radius;
 
   &:focus {
@@ -28,9 +28,9 @@
   border: 1px solid $border-color;
 
   &:hover {
-    background-color: darken($background-color, 5%);
     color: $text-color;
     text-decoration: none;
+    background-color: darken($background-color, 5%);
     border-color: darken($background-color, 5%);
   }
 
@@ -40,22 +40,33 @@
   }
 }
 
-a.btn-outline,
-button.btn-outline,
-.btn-outline {
+a.wb-btn,
+button.wb-btn,
+.wb-btn {
   @extend %btn-static;
 
-  @include btn($wb-btn-default-bg, $wb-btn-default-color, lighten($wb-btn-default-color, 40%));
+  @include btn($wb-btn-default-bg, $wb-btn-default-color, $wb-btn-default-border);
+
+  // &:hover {
+  //   border-color: lighten($wb-btn-default-color, 10%);
+  // }
+}
+
+a.wb-btn-outline,
+button.wb-btn-outline,
+.wb-btn-outline {
+  @extend %btn-static;
+
+  @include btn($wb-btn-outline-bg, $wb-btn-outline-color, lighten($wb-btn-outline-color, 40%));
 
   &:hover {
     border-color: lighten($wb-btn-default-color, 10%);
   }
 }
 
-
-a.btn-primary,
-button.btn-primary,
-.btn-primary {
+a.wb-btn-primary,
+button.wb-btn-primary,
+.wb-btn-primary {
   @extend %btn-static;
 
   @include btn($wb-btn-primary-bg, $wb-btn-primary-color, $wb-btn-primary-bg);

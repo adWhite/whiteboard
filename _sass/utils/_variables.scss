@@ -61,9 +61,13 @@ $wb-border-radius-small: 3px;
 
 $wb-btn-border-radius: $wb-border-radius-base;
 
-$wb-btn-default-bg: transparent;
-$wb-btn-default-color: #333;
-$wb-btn-default-border: #ccc;
+$wb-btn-default-bg: $wb-gray-lighter;
+$wb-btn-default-color: $wb-gray;
+$wb-btn-default-border: $wb-btn-default-bg;
+
+$wb-btn-outline-bg: transparent;
+$wb-btn-outline-color: #333;
+$wb-btn-outline-border: #ccc;
 
 $wb-btn-primary-bg: $wb-brand-primary;
 $wb-btn-primary-color: #fff;

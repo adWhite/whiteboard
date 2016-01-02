@@ -10,7 +10,7 @@ relative_permalinks: true
 
 # Setup
 title:               Whiteboard v0.2.0
-tagline:             An extensible CSS toolkit.
+tagline:             A component-driven CSS toolkit for modern web projects
 url:                 http://adwhite.github.io/whiteboard/
 paginate:            1
 baseurl:             "/whiteboard"

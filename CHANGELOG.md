@@ -4,12 +4,25 @@ All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased]
+
+### Added
+
+### Changed
+
+- Moved `components/_images.scss` styles to `base/_base.scss`.
+
+### Fixed
+
+### Removed
+
+## [0.2.0] - 2016-01-01
+
 ### Removed
 
 - `wb-` name-spacing with very common elements.
 - First paragraph on examples with dummy text.
 
-## [0.1.0] - 2015-06-12
+## 0.1.0 - 2015-06-12
 
 (Only the notable changes since public release)
 
@@ -31,4 +44,6 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 - Removed all content on the README.md file, install instructions and other basic text pending.
 
-[0.1.0]: http://github.com/adwhite/whiteboard/compare/v0.1.0
+
+[Unreleased]: http://github.com/adwhite/whiteboard/compare/v0.1.0...HEAD
+[0.2.0]: http://github.com/adwhite/whiteboard/compare/v0.1.0...v0.2.0

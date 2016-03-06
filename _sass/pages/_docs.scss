@@ -3,7 +3,9 @@
  * and should not be used on production.
  */
 
-body { margin: 0; }
+body {
+  margin: 0;
+}
 
 /*
  * Header
@@ -82,7 +84,7 @@ main {
 }
 
 .color {
-  @extend .text-center;
+  @extend .txt-center;
 
   float: left;
   margin-right: 2em;
@@ -95,9 +97,17 @@ main {
   border-radius: 50%;
 }
 
-.color-brand-one { background-color: #eee; }
-.color-brand-two { background-color: #ddd; }
-.color-brand-three { background-color: #ccc; }
+.color-brand-one {
+  background-color: #eee;
+}
+
+.color-brand-two {
+  background-color: #ddd;
+}
+
+.color-brand-three {
+  background-color: #ccc;
+}
 
 /*
  * Footer
